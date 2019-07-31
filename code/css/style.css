@@ -1,0 +1,34 @@
+/* Make sure tables are the fill width of the MDL grid cell. */
+table {
+    width: 100%;
+}
+
+/* Make sure MDL text field within tables fill the width. */
+td .mdl-textfield {
+    display: block;
+    width: auto;
+}
+
+/* Use a light grey background color for tbale heading cells. */
+.mdl-data-table thead tr th {
+    background-color: #DDD;
+}
+
+/* Position the date in headings floating off to the right. */
+.observation-table .date {
+    position: absolute;
+    right: 15px;
+    top: 33px;
+    
+}
+
+/* Position delete icon for observation table cells. */
+.mdl-data-table__cell--non-numeric > .mdl-button--icon {
+    position: absolute;
+    right: 15px;
+    top: 33px;
+}
+
+#errorMessages {
+    color: #d50000;
+}

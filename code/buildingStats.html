@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+        <meta name="mobile-web-app-capable" content="yes" />
+        <title>Room Usage</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body>
+        <!-- Always shows a header, even in smaller screens. -->
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                    <!-- Title -->
+                    <span class="mdl-layout-title">Building Stats</span>
+                    <!-- Add spacer, to align navigation to the right -->
+                    <div class="mdl-layout-spacer"></div>
+                </div>
+            </header>
+            <div class="mdl-layout__drawer">
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="index.html">New Observation</a>
+                    <a class="mdl-navigation__link" href="observations.html">Observations</a>
+                    <a class="mdl-navigation__link" href="occupancy.html">Occupancy</a>
+                    <a class="mdl-navigation__link" href="">Building Stats</a>
+                </nav>
+            </div>
+            <main class="mdl-layout__content">
+                <div class="mdl-grid" id="stats">
+
+                    <!-- Example message card.  Use this pattern with different text. -->
+
+                    <div class="mdl-cell mdl-cell--4-col">
+                        <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+                            <tbody>
+                                <tr><td class="mdl-data-table__cell--non-numeric">Building statistics</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Example building summary cards.  You can generate a number of  -->
+                    <!-- these and add them to the "content element" to show a list of  -->
+                    <!-- observations.  You can display them differently if you like.   -->
+
+                    <div class="mdl-cell mdl-cell--4-col">
+                        <table class="observation-table mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+                            <thead>
+                                <tr><th class="mdl-data-table__cell--non-numeric">
+                                    <h4>
+                                        15 Research Way
+                                    </h4>
+                                </th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td class="mdl-data-table__cell--non-numeric">
+                                    Observations: 2<br />
+                                    Wasteful observations: 0<br />
+                                    Average seat utilisation: 82.8%<br />
+                                    Average lights utilisation: 50.0%<br />
+                                    Average heating/cooling utilisation: 50.0%
+                                </td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="mdl-cell mdl-cell--4-col">
+                        <table class="observation-table mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+                            <thead>
+                                <tr><th class="mdl-data-table__cell--non-numeric">
+                                    <h4>
+                                        15 Research Way
+                                    </h4>
+                                </th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td class="mdl-data-table__cell--non-numeric">
+                                    Observations: 2<br />
+                                    Wasteful observations: 0<br />
+                                    Average seat utilisation: 82.8%<br />
+                                    Average lights utilisation: 50.0%<br />
+                                    Average heating/cooling utilisation: 50.0%
+                                </td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- End example cards. -->
+
+                </div>
+            </main>
+            <div id="toast" class="mdl-js-snackbar mdl-snackbar">
+                <div class="mdl-snackbar__text"></div>
+                <button class="mdl-snackbar__action" type="button"></button>
+            </div>
+        </div>
+        <script src="js/utility.js"></script>
+        <script src="js/shared.js"></script>
+        <script src="js/buildingStats.js"></script>
+    </body>
+</html>
